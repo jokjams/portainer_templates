@@ -308,8 +308,8 @@
       "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
       "platform": "linux",
       "repository": {
-        "stackfile": "Template/Stack/bookstack.yml",
-        "url": "https://github.com/Qballjos/portainer_templates"
+        "stackfile": "/stack/bookstack.yml",
+        "url": "https://github.com/jokjams/portainer_templates"
       },
       "title": "Bookstack",
       "type": 3
@@ -1198,8 +1198,8 @@
       "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
       "platform": "linux",
       "repository": {
-        "stackfile": "Template/Stack/invoice-ninja.yml",
-        "url": "https://github.com/Qballjos/portainer_templates"
+        "stackfile": "/stack/invoice-ninja.yml",
+        "url": "https://github.com/jokjams/portainer_templates"
       },
       "title": "Invoice Ninja",
       "type": 3
@@ -1935,8 +1935,8 @@
       "note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
       "platform": "linux",
       "repository": {
-        "stackfile": "Template/Stack/nextcloud.yml",
-        "url": "https://github.com/Qballjos/portainer_templates"
+        "stackfile": "/stack/nextcloud.yml",
+        "url": "https://github.com/jokjams/portainer_templates"
       },
       "title": "Nextcloud",
       "type": 3
@@ -2199,8 +2199,8 @@
       "note": "The database user is owncloud and the database is owncloud.",
       "platform": "linux",
       "repository": {
-        "stackfile": "Template/Stack/owncloud.yml",
-        "url": "https://github.com/Qballjos/portainer_templates"
+        "stackfile": "/stack/owncloud.yml",
+        "url": "https://github.com/jokjams/portainer_templates"
       },
       "title": "Owncloud",
       "type": 3
@@ -2232,8 +2232,8 @@
       "name": "Petio",
       "platform": "linux",
       "repository": {
-        "stackfile": "Template/Stack/petio.yml",
-        "url": "https://github.com/Qballjos/portainer_templates"
+        "stackfile": "/stack/petio.yml",
+        "url": "https://github.com/jokjams/portainer_templates"
       },
       "title": "Petio",
       "type": 3
