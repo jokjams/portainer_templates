@@ -905,6 +905,47 @@
       ]
     },
     {
+			"type": 1,
+			"title": "Wireshark",
+			"name": "Wireshark",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/wireshark/config</p>",
+			"description": "[Wireshark](https://www.wireshark.org/) is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireshark-icon.png",
+			"image": "linuxserver/wireshark:latest",
+			"network": "host",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Vancouver/America",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				}
+			],
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/portainer/Files/AppData/Config/wireshark/"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+    {
       "categories": ["Other"],
       "description": "A free, self-hostable rss aggregator.",
       "env": [
