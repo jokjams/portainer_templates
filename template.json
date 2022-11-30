@@ -908,7 +908,6 @@
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/wireshark/config</p>",
 			"description": "[Wireshark](https://www.wireshark.org/) is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.",
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireshark-icon.png",
@@ -949,7 +948,6 @@
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/wireguard/config<br></p>",
 			"description": "[WireGuard®](https://www.wireguard.com/) is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.",
 			"platform": "linux",
 			"logo": "https://www.wireguard.com/img/wireguard.svg",
@@ -970,7 +968,7 @@
 				{
 					"name": "TZ",
 					"label": "TZ",
-					"default": "Europe/Amsterdam",
+					"default": "Vancouver/America",
 					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				},
 				{
@@ -1022,7 +1020,7 @@
 			"volumes": [
 			{
 				"container": "/config",
-				"bind": "/volume1/docker/wireguard/config"
+				"bind": "/portainer/Files/AppData/Config/wireguard/"
 			},
 			{
 				"container": "/lib/modules",
